@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0249678C21FBFAF100F7CC1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249678B21FBFAF100F7CC1D /* AppDelegate.m */; };
+		0249678F21FBFAF100F7CC1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249678E21FBFAF100F7CC1D /* ViewController.m */; };
+		0249679221FBFAF100F7CC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0249679021FBFAF100F7CC1D /* Main.storyboard */; };
+		0249679421FBFAF200F7CC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0249679321FBFAF200F7CC1D /* Assets.xcassets */; };
+		0249679721FBFAF200F7CC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0249679521FBFAF200F7CC1D /* LaunchScreen.storyboard */; };
+		0249679A21FBFAF200F7CC1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249679921FBFAF200F7CC1D /* main.m */; };
+		024967A421FBFAF200F7CC1D /* CNJVideoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */; };
+		024967AF21FBFAF200F7CC1D /* CNJVideoViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		024967A021FBFAF200F7CC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0249677F21FBFAF100F7CC1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0249678621FBFAF100F7CC1D;
+			remoteInfo = CNJVideoView;
+		};
+		024967AB21FBFAF200F7CC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0249677F21FBFAF100F7CC1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0249678621FBFAF100F7CC1D;
+			remoteInfo = CNJVideoView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0249678721FBFAF100F7CC1D /* CNJVideoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNJVideoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0249678A21FBFAF100F7CC1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0249678B21FBFAF100F7CC1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0249678D21FBFAF100F7CC1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0249678E21FBFAF100F7CC1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0249679121FBFAF100F7CC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0249679321FBFAF200F7CC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0249679621FBFAF200F7CC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0249679821FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0249679921FBFAF200F7CC1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0249679F21FBFAF200F7CC1D /* CNJVideoViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNJVideoViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJVideoViewTests.m; sourceTree = "<group>"; };
+		024967A521FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024967AA21FBFAF200F7CC1D /* CNJVideoViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNJVideoViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJVideoViewUITests.m; sourceTree = "<group>"; };
+		024967B021FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0249678421FBFAF100F7CC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0249679C21FBFAF200F7CC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024967A721FBFAF200F7CC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0249677E21FBFAF100F7CC1D = {
+			isa = PBXGroup;
+			children = (
+				0249678921FBFAF100F7CC1D /* CNJVideoView */,
+				024967A221FBFAF200F7CC1D /* CNJVideoViewTests */,
+				024967AD21FBFAF200F7CC1D /* CNJVideoViewUITests */,
+				0249678821FBFAF100F7CC1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0249678821FBFAF100F7CC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0249678721FBFAF100F7CC1D /* CNJVideoView.app */,
+				0249679F21FBFAF200F7CC1D /* CNJVideoViewTests.xctest */,
+				024967AA21FBFAF200F7CC1D /* CNJVideoViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0249678921FBFAF100F7CC1D /* CNJVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				0249678A21FBFAF100F7CC1D /* AppDelegate.h */,
+				0249678B21FBFAF100F7CC1D /* AppDelegate.m */,
+				0249678D21FBFAF100F7CC1D /* ViewController.h */,
+				0249678E21FBFAF100F7CC1D /* ViewController.m */,
+				0249679021FBFAF100F7CC1D /* Main.storyboard */,
+				0249679321FBFAF200F7CC1D /* Assets.xcassets */,
+				0249679521FBFAF200F7CC1D /* LaunchScreen.storyboard */,
+				0249679821FBFAF200F7CC1D /* Info.plist */,
+				0249679921FBFAF200F7CC1D /* main.m */,
+			);
+			path = CNJVideoView;
+			sourceTree = "<group>";
+		};
+		024967A221FBFAF200F7CC1D /* CNJVideoViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */,
+				024967A521FBFAF200F7CC1D /* Info.plist */,
+			);
+			path = CNJVideoViewTests;
+			sourceTree = "<group>";
+		};
+		024967AD21FBFAF200F7CC1D /* CNJVideoViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */,
+				024967B021FBFAF200F7CC1D /* Info.plist */,
+			);
+			path = CNJVideoViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0249678621FBFAF100F7CC1D /* CNJVideoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024967B321FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoView" */;
+			buildPhases = (
+				0249678321FBFAF100F7CC1D /* Sources */,
+				0249678421FBFAF100F7CC1D /* Frameworks */,
+				0249678521FBFAF100F7CC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CNJVideoView;
+			productName = CNJVideoView;
+			productReference = 0249678721FBFAF100F7CC1D /* CNJVideoView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0249679E21FBFAF200F7CC1D /* CNJVideoViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024967B621FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoViewTests" */;
+			buildPhases = (
+				0249679B21FBFAF200F7CC1D /* Sources */,
+				0249679C21FBFAF200F7CC1D /* Frameworks */,
+				0249679D21FBFAF200F7CC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				024967A121FBFAF200F7CC1D /* PBXTargetDependency */,
+			);
+			name = CNJVideoViewTests;
+			productName = CNJVideoViewTests;
+			productReference = 0249679F21FBFAF200F7CC1D /* CNJVideoViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		024967A921FBFAF200F7CC1D /* CNJVideoViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024967B921FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoViewUITests" */;
+			buildPhases = (
+				024967A621FBFAF200F7CC1D /* Sources */,
+				024967A721FBFAF200F7CC1D /* Frameworks */,
+				024967A821FBFAF200F7CC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				024967AC21FBFAF200F7CC1D /* PBXTargetDependency */,
+			);
+			name = CNJVideoViewUITests;
+			productName = CNJVideoViewUITests;
+			productReference = 024967AA21FBFAF200F7CC1D /* CNJVideoViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0249677F21FBFAF100F7CC1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = alibaba;
+				TargetAttributes = {
+					0249678621FBFAF100F7CC1D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0249679E21FBFAF200F7CC1D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0249678621FBFAF100F7CC1D;
+					};
+					024967A921FBFAF200F7CC1D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0249678621FBFAF100F7CC1D;
+					};
+				};
+			};
+			buildConfigurationList = 0249678221FBFAF100F7CC1D /* Build configuration list for PBXProject "CNJVideoView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0249677E21FBFAF100F7CC1D;
+			productRefGroup = 0249678821FBFAF100F7CC1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0249678621FBFAF100F7CC1D /* CNJVideoView */,
+				0249679E21FBFAF200F7CC1D /* CNJVideoViewTests */,
+				024967A921FBFAF200F7CC1D /* CNJVideoViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0249678521FBFAF100F7CC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0249679721FBFAF200F7CC1D /* LaunchScreen.storyboard in Resources */,
+				0249679421FBFAF200F7CC1D /* Assets.xcassets in Resources */,
+				0249679221FBFAF100F7CC1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0249679D21FBFAF200F7CC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024967A821FBFAF200F7CC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0249678321FBFAF100F7CC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0249678F21FBFAF100F7CC1D /* ViewController.m in Sources */,
+				0249679A21FBFAF200F7CC1D /* main.m in Sources */,
+				0249678C21FBFAF100F7CC1D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0249679B21FBFAF200F7CC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024967A421FBFAF200F7CC1D /* CNJVideoViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024967A621FBFAF200F7CC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024967AF21FBFAF200F7CC1D /* CNJVideoViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		024967A121FBFAF200F7CC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0249678621FBFAF100F7CC1D /* CNJVideoView */;
+			targetProxy = 024967A021FBFAF200F7CC1D /* PBXContainerItemProxy */;
+		};
+		024967AC21FBFAF200F7CC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0249678621FBFAF100F7CC1D /* CNJVideoView */;
+			targetProxy = 024967AB21FBFAF200F7CC1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0249679021FBFAF100F7CC1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0249679121FBFAF100F7CC1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0249679521FBFAF200F7CC1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0249679621FBFAF200F7CC1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		024967B121FBFAF300F7CC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		024967B221FBFAF300F7CC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		024967B421FBFAF300F7CC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		024967B521FBFAF300F7CC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		024967B721FBFAF300F7CC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNJVideoView.app/CNJVideoView";
+			};
+			name = Debug;
+		};
+		024967B821FBFAF300F7CC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNJVideoView.app/CNJVideoView";
+			};
+			name = Release;
+		};
+		024967BA21FBFAF300F7CC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CNJVideoView;
+			};
+			name = Debug;
+		};
+		024967BB21FBFAF300F7CC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CNJVideoViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.CNJVideoViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CNJVideoView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0249678221FBFAF100F7CC1D /* Build configuration list for PBXProject "CNJVideoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024967B121FBFAF300F7CC1D /* Debug */,
+				024967B221FBFAF300F7CC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024967B321FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024967B421FBFAF300F7CC1D /* Debug */,
+				024967B521FBFAF300F7CC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024967B621FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024967B721FBFAF300F7CC1D /* Debug */,
+				024967B821FBFAF300F7CC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024967B921FBFAF300F7CC1D /* Build configuration list for PBXNativeTarget "CNJVideoViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024967BA21FBFAF300F7CC1D /* Debug */,
+				024967BB21FBFAF300F7CC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0249677F21FBFAF100F7CC1D /* Project object */;
+}
