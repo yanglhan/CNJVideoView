@@ -13,8 +13,9 @@
 @interface CNJContentShowView ()
 @property (nonatomic, strong) UIImageView *userImageView;
 @property (nonatomic, strong) UIImageView *musicImageView;
-@property (nonatomic, strong) UILabel     *likeLabel;
+@property (nonatomic, strong) UILabel     *forwardLabel;
 @property (nonatomic, strong) UILabel     *commentLabel;
+@property (nonatomic, strong) UILabel     *likeLabel;
 
 @end
 
@@ -28,6 +29,14 @@
 }
 
 - (void)initSubViews {
+    /**
+     @parms
+     * @musicImageView
+     * @forward
+     * @comment
+     * @like
+     * @userImageView
+     */
 }
 
 #pragma mark - publick
