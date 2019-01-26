@@ -19,6 +19,7 @@
 		024967A421FBFAF200F7CC1D /* CNJVideoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */; };
 		024967AF21FBFAF200F7CC1D /* CNJVideoViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */; };
 		024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967BD21FBFB2000F7CC1D /* CNJViewController.m */; };
+		02CB106721FC561C009BB5C8 /* CNJNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */; };
 		1B965425406AE293738AB0D8 /* libPods-CNJVideoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02062A9796F8B7286C93436E /* libPods-CNJVideoView.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		024967B021FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024967BC21FBFB2000F7CC1D /* CNJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJViewController.h; sourceTree = "<group>"; };
 		024967BD21FBFB2000F7CC1D /* CNJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJViewController.m; sourceTree = "<group>"; };
+		02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNJNetworkHelper.m; sourceTree = "<group>"; };
+		02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNJNetworkHelper.h; sourceTree = "<group>"; };
 		09455F4110D510FC41BC2AA4 /* Pods-CNJVideoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNJVideoView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView.release.xcconfig"; sourceTree = "<group>"; };
 		7E4F4F6BD54306AA9F8282FB /* Pods-CNJVideoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNJVideoView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +142,8 @@
 		022F227E21FC043E00D31C4A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */,
+				02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			files = (
 				022F227621FBFD9600D31C4A /* CNJScrollView.m in Sources */,
 				022F227921FBFDB000D31C4A /* CNJContentShowView.m in Sources */,
+				02CB106721FC561C009BB5C8 /* CNJNetworkHelper.m in Sources */,
 				022F226D21FBFD5A00D31C4A /* CNJVideoViewModel.m in Sources */,
 				0249679A21FBFAF200F7CC1D /* main.m in Sources */,
 				024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */,
