@@ -40,7 +40,7 @@
     self.viewModel = [[CNJVideoViewModel alloc] init];
     self.videoModels = @[].mutableCopy;
     __weak typeof(self) weakSelf = self;
-    [self.viewModel handleMediaItems:^(NSArray * _Nonnull videoes) {
+    [self.viewModel getMediaItems:^(NSArray * _Nonnull videoes) {
         [weakSelf.videoModels addObjectsFromArray:videoes];
         [weakSelf updatePlayView];
     }];

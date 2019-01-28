@@ -11,8 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CNJVideoViewModel : NSObject
-
-- (void)handleMediaItems:(void (^)(NSArray *videoes))completeBlock;
+/** @param
+ *  completeBlock page
+ *  一次取 10 个数据，
+ *  滑到第 5 个视频的时候去取新的视频数据
+ */
+- (void)getMediaItems:(void (^)(NSArray *videoes))completeBlock;
 
 @end
 
