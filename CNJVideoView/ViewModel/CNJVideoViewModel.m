@@ -8,7 +8,7 @@
 
 #import "CNJVideoViewModel.h"
 #import "CNJVideoModel.h"
-#import "GKNetworking.h"
+#import "CNJNetworkHelper.h"
 
 @interface CNJVideoViewModel ()
 
@@ -34,7 +34,7 @@
     NSString *url = @"http://c.tieba.baidu.com/c/f/nani/recommend/list";
     
     //    NSString *url = @"https://shanguang.chaonengjie.com/v3/get_recommend_video";
-    [GKNetworking get:url params:params success:^(id  _Nonnull responseObject) {
+    [CNJNetworkHelper get:url params:params success:^(id  _Nonnull responseObject) {
         if ([responseObject[@"error_code"] integerValue] == 0) {
             NSDictionary *data = responseObject[@"data"];
             

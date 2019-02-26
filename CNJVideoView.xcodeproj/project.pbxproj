@@ -21,7 +21,6 @@
 		02C2831B220188D6003E7F43 /* CNJSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831A220188D6003E7F43 /* CNJSliderView.m */; };
 		02C2831E22018938003E7F43 /* CNJVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831D22018938003E7F43 /* CNJVideoControlView.m */; };
 		02C2832122018B58003E7F43 /* CNJPersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2832022018B58003E7F43 /* CNJPersonalModel.m */; };
-		02C283252201A79C003E7F43 /* GKNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C283242201A79B003E7F43 /* GKNetworking.m */; };
 		02CB106721FC561C009BB5C8 /* CNJNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */; };
 		02CB106A21FEA447009BB5C8 /* CNJVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106921FEA447009BB5C8 /* CNJVideoCache.m */; };
 		02CB106D22014C05009BB5C8 /* CNJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106C22014C05009BB5C8 /* CNJSearchViewController.m */; };
@@ -81,8 +80,6 @@
 		02C2831F22018B58003E7F43 /* CNJPersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJPersonalModel.h; sourceTree = "<group>"; };
 		02C2832022018B58003E7F43 /* CNJPersonalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJPersonalModel.m; sourceTree = "<group>"; };
 		02C283222201916D003E7F43 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		02C283232201A79B003E7F43 /* GKNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNetworking.h; sourceTree = "<group>"; };
-		02C283242201A79B003E7F43 /* GKNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNetworking.m; sourceTree = "<group>"; };
 		02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNJNetworkHelper.m; sourceTree = "<group>"; };
 		02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNJNetworkHelper.h; sourceTree = "<group>"; };
 		02CB106821FEA447009BB5C8 /* CNJVideoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJVideoCache.h; sourceTree = "<group>"; };
@@ -184,8 +181,6 @@
 		022F227E21FC043E00D31C4A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				02C283232201A79B003E7F43 /* GKNetworking.h */,
-				02C283242201A79B003E7F43 /* GKNetworking.m */,
 				02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */,
 				02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */,
 			);
@@ -461,7 +456,6 @@
 				0249679A21FBFAF200F7CC1D /* main.m in Sources */,
 				024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */,
 				02C2832122018B58003E7F43 /* CNJPersonalModel.m in Sources */,
-				02C283252201A79C003E7F43 /* GKNetworking.m in Sources */,
 				0249678C21FBFAF100F7CC1D /* AppDelegate.m in Sources */,
 				02C2831E22018938003E7F43 /* CNJVideoControlView.m in Sources */,
 				022F227321FBFD7F00D31C4A /* CNJPlayView.m in Sources */,
