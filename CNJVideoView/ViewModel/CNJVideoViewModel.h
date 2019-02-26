@@ -16,7 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  一次取 10 个数据，
  *  滑到第 5 个视频的时候去取新的视频数据
  */
-- (void)getMediaItems:(void (^)(NSArray *videoes))completeBlock;
+@property (nonatomic, assign) BOOL  has_more;
+
+- (void)getMediaItemsSuccess:(void(^)(NSArray *list))success
+                     failure:(void(^)(NSError *error))failure;
 
 @end
 

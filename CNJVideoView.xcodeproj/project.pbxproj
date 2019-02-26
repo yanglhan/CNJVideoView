@@ -11,7 +11,6 @@
 		022F227021FBFD6A00D31C4A /* CNJVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F226F21FBFD6A00D31C4A /* CNJVideoModel.m */; };
 		022F227321FBFD7F00D31C4A /* CNJPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F227221FBFD7F00D31C4A /* CNJPlayView.m */; };
 		022F227621FBFD9600D31C4A /* CNJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F227521FBFD9600D31C4A /* CNJScrollView.m */; };
-		022F227921FBFDB000D31C4A /* CNJContentShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F227821FBFDB000D31C4A /* CNJContentShowView.m */; };
 		0249678C21FBFAF100F7CC1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249678B21FBFAF100F7CC1D /* AppDelegate.m */; };
 		0249679421FBFAF200F7CC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0249679321FBFAF200F7CC1D /* Assets.xcassets */; };
 		0249679721FBFAF200F7CC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0249679521FBFAF200F7CC1D /* LaunchScreen.storyboard */; };
@@ -19,8 +18,17 @@
 		024967A421FBFAF200F7CC1D /* CNJVideoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */; };
 		024967AF21FBFAF200F7CC1D /* CNJVideoViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */; };
 		024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967BD21FBFB2000F7CC1D /* CNJViewController.m */; };
+		02C2831B220188D6003E7F43 /* CNJSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831A220188D6003E7F43 /* CNJSliderView.m */; };
+		02C2831E22018938003E7F43 /* CNJVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831D22018938003E7F43 /* CNJVideoControlView.m */; };
+		02C2832122018B58003E7F43 /* CNJPersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2832022018B58003E7F43 /* CNJPersonalModel.m */; };
+		02C283252201A79C003E7F43 /* GKNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C283242201A79B003E7F43 /* GKNetworking.m */; };
 		02CB106721FC561C009BB5C8 /* CNJNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */; };
 		02CB106A21FEA447009BB5C8 /* CNJVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106921FEA447009BB5C8 /* CNJVideoCache.m */; };
+		02CB106D22014C05009BB5C8 /* CNJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106C22014C05009BB5C8 /* CNJSearchViewController.m */; };
+		02CB107022014C1D009BB5C8 /* CNJPeasonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB106F22014C1D009BB5C8 /* CNJPeasonalViewController.m */; };
+		02CB107422014D3B009BB5C8 /* CNJVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB107322014D3B009BB5C8 /* CNJVideoPlayer.m */; };
+		02CB107722015101009BB5C8 /* CNJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB107622015101009BB5C8 /* CNJBaseViewController.m */; };
+		02CB107A2201519E009BB5C8 /* CNJPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB10792201519E009BB5C8 /* CNJPlayerViewController.m */; };
 		1B965425406AE293738AB0D8 /* libPods-CNJVideoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02062A9796F8B7286C93436E /* libPods-CNJVideoView.a */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +59,6 @@
 		022F227221FBFD7F00D31C4A /* CNJPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJPlayView.m; sourceTree = "<group>"; };
 		022F227421FBFD9600D31C4A /* CNJScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJScrollView.h; sourceTree = "<group>"; };
 		022F227521FBFD9600D31C4A /* CNJScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJScrollView.m; sourceTree = "<group>"; };
-		022F227721FBFDB000D31C4A /* CNJContentShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJContentShowView.h; sourceTree = "<group>"; };
-		022F227821FBFDB000D31C4A /* CNJContentShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJContentShowView.m; sourceTree = "<group>"; };
 		0249678721FBFAF100F7CC1D /* CNJVideoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNJVideoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0249678A21FBFAF100F7CC1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0249678B21FBFAF100F7CC1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,10 +74,29 @@
 		024967B021FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024967BC21FBFB2000F7CC1D /* CNJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJViewController.h; sourceTree = "<group>"; };
 		024967BD21FBFB2000F7CC1D /* CNJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJViewController.m; sourceTree = "<group>"; };
+		02C28319220188D6003E7F43 /* CNJSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJSliderView.h; sourceTree = "<group>"; };
+		02C2831A220188D6003E7F43 /* CNJSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJSliderView.m; sourceTree = "<group>"; };
+		02C2831C22018938003E7F43 /* CNJVideoControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJVideoControlView.h; sourceTree = "<group>"; };
+		02C2831D22018938003E7F43 /* CNJVideoControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJVideoControlView.m; sourceTree = "<group>"; };
+		02C2831F22018B58003E7F43 /* CNJPersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJPersonalModel.h; sourceTree = "<group>"; };
+		02C2832022018B58003E7F43 /* CNJPersonalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJPersonalModel.m; sourceTree = "<group>"; };
+		02C283222201916D003E7F43 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		02C283232201A79B003E7F43 /* GKNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNetworking.h; sourceTree = "<group>"; };
+		02C283242201A79B003E7F43 /* GKNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNetworking.m; sourceTree = "<group>"; };
 		02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNJNetworkHelper.m; sourceTree = "<group>"; };
 		02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNJNetworkHelper.h; sourceTree = "<group>"; };
 		02CB106821FEA447009BB5C8 /* CNJVideoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJVideoCache.h; sourceTree = "<group>"; };
 		02CB106921FEA447009BB5C8 /* CNJVideoCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJVideoCache.m; sourceTree = "<group>"; };
+		02CB106B22014C05009BB5C8 /* CNJSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJSearchViewController.h; sourceTree = "<group>"; };
+		02CB106C22014C05009BB5C8 /* CNJSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJSearchViewController.m; sourceTree = "<group>"; };
+		02CB106E22014C1D009BB5C8 /* CNJPeasonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJPeasonalViewController.h; sourceTree = "<group>"; };
+		02CB106F22014C1D009BB5C8 /* CNJPeasonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJPeasonalViewController.m; sourceTree = "<group>"; };
+		02CB107222014D3B009BB5C8 /* CNJVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJVideoPlayer.h; sourceTree = "<group>"; };
+		02CB107322014D3B009BB5C8 /* CNJVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJVideoPlayer.m; sourceTree = "<group>"; };
+		02CB107522015101009BB5C8 /* CNJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJBaseViewController.h; sourceTree = "<group>"; };
+		02CB107622015101009BB5C8 /* CNJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJBaseViewController.m; sourceTree = "<group>"; };
+		02CB10782201519E009BB5C8 /* CNJPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJPlayerViewController.h; sourceTree = "<group>"; };
+		02CB10792201519E009BB5C8 /* CNJPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJPlayerViewController.m; sourceTree = "<group>"; };
 		09455F4110D510FC41BC2AA4 /* Pods-CNJVideoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNJVideoView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView.release.xcconfig"; sourceTree = "<group>"; };
 		7E4F4F6BD54306AA9F8282FB /* Pods-CNJVideoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNJVideoView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +132,8 @@
 			children = (
 				022F226E21FBFD6A00D31C4A /* CNJVideoModel.h */,
 				022F226F21FBFD6A00D31C4A /* CNJVideoModel.m */,
+				02C2831F22018B58003E7F43 /* CNJPersonalModel.h */,
+				02C2832022018B58003E7F43 /* CNJPersonalModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,8 +156,10 @@
 				022F227221FBFD7F00D31C4A /* CNJPlayView.m */,
 				022F227421FBFD9600D31C4A /* CNJScrollView.h */,
 				022F227521FBFD9600D31C4A /* CNJScrollView.m */,
-				022F227721FBFDB000D31C4A /* CNJContentShowView.h */,
-				022F227821FBFDB000D31C4A /* CNJContentShowView.m */,
+				02C28319220188D6003E7F43 /* CNJSliderView.h */,
+				02C2831A220188D6003E7F43 /* CNJSliderView.m */,
+				02C2831C22018938003E7F43 /* CNJVideoControlView.h */,
+				02C2831D22018938003E7F43 /* CNJVideoControlView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,8 +167,16 @@
 		022F227D21FBFDEA00D31C4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				02CB107522015101009BB5C8 /* CNJBaseViewController.h */,
+				02CB107622015101009BB5C8 /* CNJBaseViewController.m */,
 				024967BC21FBFB2000F7CC1D /* CNJViewController.h */,
 				024967BD21FBFB2000F7CC1D /* CNJViewController.m */,
+				02CB106B22014C05009BB5C8 /* CNJSearchViewController.h */,
+				02CB106C22014C05009BB5C8 /* CNJSearchViewController.m */,
+				02CB106E22014C1D009BB5C8 /* CNJPeasonalViewController.h */,
+				02CB106F22014C1D009BB5C8 /* CNJPeasonalViewController.m */,
+				02CB10782201519E009BB5C8 /* CNJPlayerViewController.h */,
+				02CB10792201519E009BB5C8 /* CNJPlayerViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +184,8 @@
 		022F227E21FC043E00D31C4A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				02C283232201A79B003E7F43 /* GKNetworking.h */,
+				02C283242201A79B003E7F43 /* GKNetworking.m */,
 				02CB106621FC561C009BB5C8 /* CNJNetworkHelper.h */,
 				02CB106521FC561C009BB5C8 /* CNJNetworkHelper.m */,
 			);
@@ -180,6 +219,7 @@
 			children = (
 				0249678A21FBFAF100F7CC1D /* AppDelegate.h */,
 				0249678B21FBFAF100F7CC1D /* AppDelegate.m */,
+				02CB107122014D0E009BB5C8 /* Player */,
 				022F227E21FC043E00D31C4A /* Network */,
 				022F227D21FBFDEA00D31C4A /* Controllers */,
 				022F227C21FBFDE200D31C4A /* View */,
@@ -188,6 +228,7 @@
 				0249679321FBFAF200F7CC1D /* Assets.xcassets */,
 				0249679521FBFAF200F7CC1D /* LaunchScreen.storyboard */,
 				0249679821FBFAF200F7CC1D /* Info.plist */,
+				02C283222201916D003E7F43 /* PrefixHeader.pch */,
 				0249679921FBFAF200F7CC1D /* main.m */,
 			);
 			path = CNJVideoView;
@@ -209,6 +250,15 @@
 				024967B021FBFAF200F7CC1D /* Info.plist */,
 			);
 			path = CNJVideoViewUITests;
+			sourceTree = "<group>";
+		};
+		02CB107122014D0E009BB5C8 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				02CB107222014D3B009BB5C8 /* CNJVideoPlayer.h */,
+				02CB107322014D3B009BB5C8 /* CNJVideoPlayer.m */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		09A013F01D1C6CCDBE549D0B /* Frameworks */ = {
@@ -239,6 +289,7 @@
 				0249678321FBFAF100F7CC1D /* Sources */,
 				0249678421FBFAF100F7CC1D /* Frameworks */,
 				0249678521FBFAF100F7CC1D /* Resources */,
+				AB135920AE3551A324D10291 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +423,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB135920AE3551A324D10291 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView-resources.sh",
+				"${PODS_ROOT}/GKNavigationBarViewController/GKNavigationBarViewController/GKNavigationBarViewController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GKNavigationBarViewController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,14 +448,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CB106D22014C05009BB5C8 /* CNJSearchViewController.m in Sources */,
 				022F227621FBFD9600D31C4A /* CNJScrollView.m in Sources */,
-				022F227921FBFDB000D31C4A /* CNJContentShowView.m in Sources */,
+				02CB107A2201519E009BB5C8 /* CNJPlayerViewController.m in Sources */,
+				02C2831B220188D6003E7F43 /* CNJSliderView.m in Sources */,
+				02CB107022014C1D009BB5C8 /* CNJPeasonalViewController.m in Sources */,
 				02CB106A21FEA447009BB5C8 /* CNJVideoCache.m in Sources */,
+				02CB107722015101009BB5C8 /* CNJBaseViewController.m in Sources */,
 				02CB106721FC561C009BB5C8 /* CNJNetworkHelper.m in Sources */,
+				02CB107422014D3B009BB5C8 /* CNJVideoPlayer.m in Sources */,
 				022F226D21FBFD5A00D31C4A /* CNJVideoViewModel.m in Sources */,
 				0249679A21FBFAF200F7CC1D /* main.m in Sources */,
 				024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */,
+				02C2832122018B58003E7F43 /* CNJPersonalModel.m in Sources */,
+				02C283252201A79C003E7F43 /* GKNetworking.m in Sources */,
 				0249678C21FBFAF100F7CC1D /* AppDelegate.m in Sources */,
+				02C2831E22018938003E7F43 /* CNJVideoControlView.m in Sources */,
 				022F227321FBFD7F00D31C4A /* CNJPlayView.m in Sources */,
 				022F227021FBFD6A00D31C4A /* CNJVideoModel.m in Sources */,
 			);
@@ -554,6 +631,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LQ47K46NT;
+				GCC_PREFIX_HEADER = CNJVideoView/PrefixHeader.pch;
 				INFOPLIST_FILE = CNJVideoView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,6 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LQ47K46NT;
+				GCC_PREFIX_HEADER = CNJVideoView/PrefixHeader.pch;
 				INFOPLIST_FILE = CNJVideoView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

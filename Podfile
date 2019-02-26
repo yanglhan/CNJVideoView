@@ -3,8 +3,12 @@
 
 target 'CNJVideoView' do
 
-pod "Masonry"
-pod "YYModel"
-pod "YYWebImage"
+pod 'Masonry'
+pod 'YYModel'
+pod 'YYWebImage'
+pod 'AFNetworking'
+pod 'GKNavigationBarViewController'
+#金山云播放器
+pod 'KSYMediaPlayer_iOS', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git'
 
 end

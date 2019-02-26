@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CNJNetworkHelper : NSObject
 
+- (void)requestHttpHandle:(void (^)(id))completeBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,14 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CNJVideoViewModel.h"
+#import "CNJVideoControlView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CNJPlayView : UIView
 
-- (void)videoPlayWithViewModels:(NSArray *)videoes;
+@property (nonatomic, strong) CNJVideoViewModel    *viewModel;
+@property (nonatomic, strong) CNJVideoControlView  *currentControlView;
 
-- (void)play;
+- (instancetype)initWithViewController:(UIViewController *)vc
+                              isPushed:(BOOL)isPushed;
+
+- (void)setModels:(NSArray *)models
+            index:(NSInteger)index;
 
 - (void)pause;
 

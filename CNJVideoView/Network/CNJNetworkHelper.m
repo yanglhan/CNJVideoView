@@ -7,7 +7,14 @@
 //
 
 #import "CNJNetworkHelper.h"
+#import <AFNetworking.h>
 
 @implementation CNJNetworkHelper
+
+- (void)requestHttpHandle:(void (^)(id))completeBlock {
+    /**
+     * 网络请求返回值
+     */
+}
 
 @end
