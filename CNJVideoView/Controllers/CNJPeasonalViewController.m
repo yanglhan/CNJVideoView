@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
     self.gk_navigationBar.hidden = YES;
+    [self createInvalidView];
 }
 
 @end

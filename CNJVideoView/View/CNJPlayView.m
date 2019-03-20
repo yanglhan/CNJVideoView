@@ -8,6 +8,7 @@
 
 #import "CNJPlayView.h"
 #import "CNJVideoPlayer.h"
+#import <MJRefresh.h>
 
 @interface CNJPlayView ()
 <UIScrollViewDelegate,
@@ -27,6 +28,7 @@ CNJYVideoControlViewDelegate>
 @property (nonatomic, strong) CNJVideoPlayer       *player;
 @property (nonatomic,   copy) NSString             *currentPlayId;
 @property (nonatomic, assign) BOOL                 isPlaying_beforeScroll;
+@property (nonatomic, assign) BOOL                 isRefreshMore;
 
 @end
 
@@ -48,6 +50,40 @@ CNJYVideoControlViewDelegate>
                 [self setModels:list index:0];
             } failure:^(NSError * _Nonnull error) {
                 NSLog(@"%@", error);
+            }];
+            
+            self.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+                [self.videos removeAllObjects];
+                
+                [self.viewModel getMoreListWithSuccess:^(NSArray * _Nonnull list) {
+                    [self setModels:list index:0];
+                    [self.scrollView.mj_header endRefreshing];
+                    [self.scrollView.mj_footer endRefreshing];
+                } failure:^(NSError * _Nonnull error) {
+                    NSLog(@"%@", error);
+                    [self.scrollView.mj_header endRefreshing];
+                    [self.scrollView.mj_footer endRefreshing];
+                }];
+            }];
+            
+            self.scrollView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+                [self.player pause];
+                // 当播放索引为最后一个时才会触发下拉刷新
+                self.currentPlayIndex = self.videos.count - 1;
+                
+                [self.viewModel getMediaItemsSuccess:^(NSArray * _Nonnull list) {
+                    self.isRefreshMore = NO;
+                    if (list) {
+                        // 处理数据不准问题
+                        [self addModels:list index:self.currentPlayIndex];
+                        [self.scrollView.mj_footer endRefreshing];
+                    }else {
+                        [self.scrollView.mj_footer endRefreshingWithNoMoreData];
+                    }
+                } failure:^(NSError * _Nonnull error) {
+                    self.isRefreshMore = NO;
+                    [self.scrollView.mj_footer endRefreshingWithNoMoreData];
+                }];
             }];
         }
     }
@@ -122,6 +158,60 @@ CNJYVideoControlViewDelegate>
         }
     }
 }
+
+- (void)addModels:(NSArray *)models index:(NSInteger)index {
+    [self.videos addObjectsFromArray:models];
+    self.index = index;
+    self.currentPlayIndex = index;
+    if (self.videos.count == 0) return;
+    
+    if (self.videos.count == 1) {
+        [self.currentView removeFromSuperview];
+        [self.bottomView removeFromSuperview];
+        self.scrollView.contentSize = CGSizeMake(0, SCREEN_HEIGHT);
+        self.topView.model = self.videos.firstObject;
+        [self playVideoFrom:self.topView];
+    }else if (self.videos.count == 2) {
+        [self.bottomView removeFromSuperview];
+        self.scrollView.contentSize = CGSizeMake(0, SCREEN_HEIGHT * 2);
+        self.topView.model = self.videos.firstObject;
+        self.currentView.model = self.videos.lastObject;
+        
+        if (index == 1) {
+            self.scrollView.contentOffset = CGPointMake(0, SCREEN_HEIGHT);
+            
+            [self playVideoFrom:self.currentView];
+        }else {
+            [self playVideoFrom:self.topView];
+        }
+    }else {
+        if (index == 0) {   // 如果是第一个，则显示上视图，且预加载中下视图
+            self.topView.model = self.videos[index];
+            self.currentView.model = self.videos[index + 1];
+            self.bottomView.model = self.videos[index + 2];
+            // 播放第一个
+            [self playVideoFrom:self.topView];
+        }else if (index == self.videos.count - 1) { // 如果是最后一个，则显示最后视图，且预加载前两个
+            self.bottomView.model = self.videos[index];
+            self.currentView.model = self.videos[index - 1];
+            self.topView.model = self.videos[index - 2];
+            // 显示最后一个
+            self.scrollView.contentOffset = CGPointMake(0, SCREEN_HEIGHT * 2);
+            // 播放最后一个
+            [self playVideoFrom:self.bottomView];
+        }else { // 显示中间，播放中间，预加载上下
+            self.currentView.model = self.videos[index];
+            self.topView.model = self.videos[index - 1];
+            self.bottomView.model = self.videos[index + 1];
+            // 显示中间
+            self.scrollView.contentOffset = CGPointMake(0, SCREEN_HEIGHT);
+            // 播放中间
+            [self playVideoFrom:self.currentView];
+        }
+    }
+}
+
+#pragma mark - player 
 
 - (void)pause {
     if (self.player.isPlaying) {
@@ -242,6 +332,25 @@ CNJYVideoControlViewDelegate>
             }
         }
     }
+    
+    if (self.isPushed) return;
+    
+    // 自动刷新，如果想要去掉自动刷新功能，去掉下面代码即可
+    if (scrollView.contentOffset.y == SCREEN_HEIGHT) {
+        if (self.isRefreshMore) return;
+        
+        // 播放到倒数第二个时，请求更多内容
+        if (self.currentPlayIndex == self.videos.count - 2) {
+            self.isRefreshMore = YES;
+            [self refreshMore];
+        }
+    }
+    
+    if (self.isRefreshMore) return;
+    
+    if (scrollView.contentOffset.y == 2 * SCREEN_HEIGHT) {
+        [self refreshMore];
+    }
 }
 
 // 结束滚动后开始播放
@@ -268,6 +377,22 @@ CNJYVideoControlViewDelegate>
             NSLog(@"%@", error);
         }];
     }
+}
+
+- (void)refreshMore {
+    [self.viewModel getMoreListWithSuccess:^(NSArray * _Nonnull list) {
+        self.isRefreshMore = NO;
+        if (list) {
+            [self.videos addObjectsFromArray:list];
+            [self.scrollView.mj_footer endRefreshing];
+        }else {
+            [self.scrollView.mj_footer endRefreshingWithNoMoreData];
+        }
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"%@", error);
+        self.isRefreshMore = NO;
+        [self.scrollView.mj_footer endRefreshingWithNoMoreData];
+    }];
 }
 
 #pragma mark - CNJVideoPlayerDelegate

@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getMediaItemsSuccess:(void(^)(NSArray *list))success
                      failure:(void(^)(NSError *error))failure;
 
+- (void)getMoreListWithSuccess:(void(^)(NSArray *list))success
+                       failure:(void(^)(NSError *error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END

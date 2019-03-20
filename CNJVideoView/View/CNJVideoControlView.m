@@ -40,14 +40,14 @@
 
 @interface CNJVideoControlView()
 
-@property (nonatomic, strong) UIImageView           *iconView;
-@property (nonatomic, strong) CNJVideoItemButton   *praiseBtn;
-@property (nonatomic, strong) CNJVideoItemButton   *commentBtn;
-@property (nonatomic, strong) CNJVideoItemButton   *shareBtn;
+@property (nonatomic, strong) UIImageView               *iconView;
+@property (nonatomic, strong) CNJVideoItemButton        *praiseBtn;
+@property (nonatomic, strong) CNJVideoItemButton        *commentBtn;
+@property (nonatomic, strong) CNJVideoItemButton        *shareBtn;
 
-@property (nonatomic, strong) UILabel               *nameLabel;
-@property (nonatomic, strong) UILabel               *contentLabel;
-@property (nonatomic, strong) CNJSliderView          *sliderView;
+@property (nonatomic, strong) UILabel                   *nameLabel;
+@property (nonatomic, strong) UILabel                   *contentLabel;
+@property (nonatomic, strong) CNJSliderView             *sliderView;
 
 @property (nonatomic, strong) UIActivityIndicatorView   *loadingView;
 @property (nonatomic, strong) UIButton                  *playBtn;
@@ -134,7 +134,6 @@
 
 - (void)setModel:(CNJVideoModel *)model {
     _model = model;
-    
     self.sliderView.value = 0;
     [self.coverImgView yy_setImageWithURL:[NSURL URLWithString:model.thumbnail_url] placeholder:nil];
     
@@ -142,10 +141,13 @@
     [self.iconView yy_setImageWithURL:[NSURL URLWithString:model.author.portrait] placeholder:nil];
     
     self.contentLabel.text = model.title;
-    
+    /** 这里的数据暂时屏蔽掉*/
+    self.iconView.hidden = YES;
+    /*
     [self.praiseBtn setTitle:model.agree_num forState:UIControlStateNormal];
     [self.commentBtn setTitle:model.comment_num forState:UIControlStateNormal];
     [self.shareBtn setTitle:model.share_num forState:UIControlStateNormal];
+     */
 }
 
 #pragma mark - Public Methods

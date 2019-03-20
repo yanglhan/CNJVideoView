@@ -21,6 +21,7 @@
 - (void)getMediaItemsSuccess:(void(^)(NSArray *list))success
                      failure:(void(^)(NSError *error))failure; {
     self.pageNum = 1;
+    /*
     NSMutableDictionary *params = [NSMutableDictionary new];
     params[@"new_recommend_type"] = @"3";
     params[@"pn"] = @(self.pageNum);
@@ -53,6 +54,45 @@
     } failure:^(NSError * _Nonnull error) {
         !failure ? : failure(error);
     }];
+     */
+    
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:videoPath];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
+    NSArray *videoList = dic[@"data"][@"video_list"];
+    
+    NSMutableArray *array = [NSMutableArray new];
+    for (NSDictionary *dict in videoList) {
+        CNJVideoModel *model = [CNJVideoModel yy_modelWithDictionary:dict];
+        [array addObject:model];
+    }
+    !success ? : success(array);
+}
+
+- (void)getMoreListWithSuccess:(void(^)(NSArray *list))success
+                       failure:(void(^)(NSError *error))failure {
+    self.pageNum ++;
+    NSString *fileName = [NSString stringWithFormat:@"video%zd", self.pageNum];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:videoPath];
+    
+    if (!jsonData) {
+        NSArray *array = nil;
+        !success ? : success(array);
+        return;
+    }
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
+    NSArray *videoList = dic[@"data"][@"video_list"];
+    NSMutableArray *array = [NSMutableArray new];
+    for (NSDictionary *dict in videoList) {
+        CNJVideoModel *model = [CNJVideoModel yy_modelWithDictionary:dict];
+        [array addObject:model];
+    }
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        !success ? : success(array);
+    });
 }
 
 @end

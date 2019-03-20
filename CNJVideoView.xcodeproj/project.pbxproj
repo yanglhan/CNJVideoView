@@ -18,6 +18,9 @@
 		024967A421FBFAF200F7CC1D /* CNJVideoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967A321FBFAF200F7CC1D /* CNJVideoViewTests.m */; };
 		024967AF21FBFAF200F7CC1D /* CNJVideoViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967AE21FBFAF200F7CC1D /* CNJVideoViewUITests.m */; };
 		024967BE21FBFB2000F7CC1D /* CNJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024967BD21FBFB2000F7CC1D /* CNJViewController.m */; };
+		029A452F2242277900C3C2A3 /* video1.json in Resources */ = {isa = PBXBuildFile; fileRef = 029A452C2242277900C3C2A3 /* video1.json */; };
+		029A45302242277900C3C2A3 /* video2.json in Resources */ = {isa = PBXBuildFile; fileRef = 029A452D2242277900C3C2A3 /* video2.json */; };
+		029A45312242277900C3C2A3 /* video3.json in Resources */ = {isa = PBXBuildFile; fileRef = 029A452E2242277900C3C2A3 /* video3.json */; };
 		02C2831B220188D6003E7F43 /* CNJSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831A220188D6003E7F43 /* CNJSliderView.m */; };
 		02C2831E22018938003E7F43 /* CNJVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2831D22018938003E7F43 /* CNJVideoControlView.m */; };
 		02C2832122018B58003E7F43 /* CNJPersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2832022018B58003E7F43 /* CNJPersonalModel.m */; };
@@ -73,6 +76,9 @@
 		024967B021FBFAF200F7CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024967BC21FBFB2000F7CC1D /* CNJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJViewController.h; sourceTree = "<group>"; };
 		024967BD21FBFB2000F7CC1D /* CNJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJViewController.m; sourceTree = "<group>"; };
+		029A452C2242277900C3C2A3 /* video1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video1.json; sourceTree = "<group>"; };
+		029A452D2242277900C3C2A3 /* video2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video2.json; sourceTree = "<group>"; };
+		029A452E2242277900C3C2A3 /* video3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video3.json; sourceTree = "<group>"; };
 		02C28319220188D6003E7F43 /* CNJSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJSliderView.h; sourceTree = "<group>"; };
 		02C2831A220188D6003E7F43 /* CNJSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNJSliderView.m; sourceTree = "<group>"; };
 		02C2831C22018938003E7F43 /* CNJVideoControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNJVideoControlView.h; sourceTree = "<group>"; };
@@ -225,6 +231,9 @@
 				0249679821FBFAF200F7CC1D /* Info.plist */,
 				02C283222201916D003E7F43 /* PrefixHeader.pch */,
 				0249679921FBFAF200F7CC1D /* main.m */,
+				029A452C2242277900C3C2A3 /* video1.json */,
+				029A452D2242277900C3C2A3 /* video2.json */,
+				029A452E2242277900C3C2A3 /* video3.json */,
 			);
 			path = CNJVideoView;
 			sourceTree = "<group>";
@@ -378,8 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029A45312242277900C3C2A3 /* video3.json in Resources */,
+				029A45302242277900C3C2A3 /* video2.json in Resources */,
 				0249679721FBFAF200F7CC1D /* LaunchScreen.storyboard in Resources */,
 				0249679421FBFAF200F7CC1D /* Assets.xcassets in Resources */,
+				029A452F2242277900C3C2A3 /* video1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +438,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CNJVideoView/Pods-CNJVideoView-resources.sh",
 				"${PODS_ROOT}/GKNavigationBarViewController/GKNavigationBarViewController/GKNavigationBarViewController.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GKNavigationBarViewController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

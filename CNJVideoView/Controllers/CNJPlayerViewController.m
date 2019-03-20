@@ -28,6 +28,11 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.playView resume];
+}
+
 -(void)dealloc {
     [self.playView description];
 }

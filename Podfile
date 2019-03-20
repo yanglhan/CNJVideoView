@@ -4,6 +4,7 @@
 target 'CNJVideoView' do
 
 pod 'Masonry'
+pod 'MJRefresh'
 pod 'YYModel'
 pod 'YYWebImage'
 pod 'AFNetworking'

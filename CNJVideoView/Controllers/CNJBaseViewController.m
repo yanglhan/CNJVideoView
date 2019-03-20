@@ -18,4 +18,11 @@
     [super viewDidLoad];
 }
 
+- (void)createInvalidView {
+    UIImageView *imageView = [UIImageView new];
+    [self.view addSubview:imageView];
+    imageView.frame = self.view.bounds;
+    imageView.image = [UIImage imageNamed:@"invalid_view_icon"];
+}
+
 @end
